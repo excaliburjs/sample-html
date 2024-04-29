@@ -6,6 +6,8 @@ This can be adapted to any frontend framework/library you prefer.
 
 See excalibur docs for more explanation https://excaliburjs.com/docs/html
 
+![sample-html](html.gif)
+
 ## Running Locally
 
 * Install Node.js
