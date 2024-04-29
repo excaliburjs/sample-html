@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+#game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.excalibur-scale {
+    transform-origin: 0 0;
+    transform: scale(var(--pixel-conversion), var(--pixel-conversion));
+}
+
+.menu {
+    position: absolute;
+    /* position menu on click */
+    left: var(--pointer-x);
+    top: var(--pointer-y);
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    background-color: #00000077;
+    border-radius: 5px;
+    /* top: calc(10px * var(--pixel-conversion));
+    left: calc(10px * var(--pixel-conversion)); */
+}
+
+.menu button {
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
