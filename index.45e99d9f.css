@@ -1,2 +1,0 @@
-html,body{background-color:#000;margin:0;padding:0}#game{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.excalibur-scale{transform-origin:0 0;transform:scale(var(--pixel-conversion),var(--pixel-conversion))}.menu{left:var(--pointer-x);top:var(--pointer-y);color:#fff;background-color:#0007;border-radius:5px;flex-direction:column;width:100px;padding:5px;display:flex;position:absolute}.menu button{margin-bottom:10px}.hide{display:none}.show{display:block}
-/*# sourceMappingURL=index.45e99d9f.css.map */
