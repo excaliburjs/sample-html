@@ -4,6 +4,28 @@ html, body {
     background-color: black;
 }
 
+h3 {
+    margin: 0;
+}
+
+.menu button {
+    all: unset;
+    cursor: pointer;
+    font-family: 'silkscreen';
+    background-color: gray;
+    border-radius: 3px;
+    box-shadow: 0 4px black;
+}
+.menu button:focus-visible,.menu button:hover {
+    outline: white solid 1px;
+    /* box-shadow: 0 4px black; */
+}
+
+.menu button:active {
+    transform: translate(0, 4px);
+    box-shadow: 0 0 black;
+}
+
 
 #game {
     position: absolute;
@@ -22,6 +44,8 @@ html, body {
     /* position menu on click */
     left: var(--pointer-x);
     top: var(--pointer-y);
+
+    font-family: 'silkscreen';
 
     display: flex;
     flex-direction: column;

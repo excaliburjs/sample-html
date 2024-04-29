@@ -1,4 +1,5 @@
 import { Actor, Color, Scene, Vector, vec } from "excalibur";
+import { IdleAnimation } from "./resources";
 
 export const calculateExPixelConversion = (screen: ex.Screen) => {
     const origin = screen.worldToPageCoordinates(Vector.Zero);
@@ -44,10 +45,10 @@ export class Menu {
     addUnit() {
         const actor = new Actor({
             pos: this.currentWorldPos,
-            width: 100,
-            height: 100,
+            scale: vec(2, 2),
             color: Color.Red
         });
+        actor.graphics.use(IdleAnimation);
         this.scene.add(actor);
         this.hide();
     }
